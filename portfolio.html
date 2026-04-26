@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Digital Marketing Agency</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+
+        a {
+            transition: 0.3s ease;
+            text-decoration: none;
+        }
+
+        .nav-links a:hover {
+            color: #E72D21 !important;
+        }
+
+        .btn-primary:hover {
+            background-color: #c42217 !important;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(231, 45, 33, 0.4);
+        }
+
+        .portfolio-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+
+        @media (max-width: 992px) {
+            .portfolio-grid {
+                grid-template-columns: 1fr 1fr !important;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none !important;
+            }
+
+            .portfolio-grid {
+                grid-template-columns: 1fr !important;
+            }
+        }
+    </style>
+</head>
+
+<body
+    style="margin: 0; padding: 0; font-family: 'DM Sans', sans-serif; color: #1a1a1a; background-color: #ffffff; line-height: 1.6; overflow-x: hidden;">
+
+    <!-- Header -->
+    <header
+        style="position: fixed; top: 0; width: 100%; background-color: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); z-index: 1000; border-bottom: 1px solid #eaeaea; padding: 1rem 5%; box-sizing: border-box;">
+        <div
+            style="display: flex; justify-content: space-between; align-items: center; max-width: 1400px; margin: 0 auto;">
+            <a href="index.html"
+                style="font-size: 1.8rem; font-weight: 800; color: #E72D21; display: flex; align-items: center; gap: 10px; text-decoration: none;">
+                <img src="./Tapus.png" alt="Tapus Logo" style="width: 100px; object-fit: contain;">
+            </a>
+            <nav class="nav-links" style="display: flex; gap: 2rem;">
+                <a href="index.html" style="font-weight: 600; color: #1a1a1a; text-decoration: none;">Home</a>
+                <a href="about.html" style="font-weight: 600; color: #1a1a1a; text-decoration: none;">About Us</a>
+                <a href="portfolio.html" style="font-weight: 600; color: #E72D21; text-decoration: none;">Portfolio</a>
+                <a href="contact.html" style="font-weight: 600; color: #1a1a1a; text-decoration: none;">Contact Us</a>
+            </nav>
+            <a href="contact.html" class="btn-primary"
+                style="display: inline-block; padding: 12px 32px; border-radius: 50px; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; cursor: pointer; border: none; background-color: #E72D21; color: #ffffff; box-shadow: 0 4px 15px rgba(231, 45, 33, 0.3); text-decoration: none; transition: 0.3s ease;">Get
+                Started</a>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section
+        style="padding: 150px 5% 80px; background: #121212 url('https://tapusmedia.com/wp-content/uploads/2026/02/Demo-1-scaled.webp') center/cover no-repeat; color: #ffffff; text-align: center; box-sizing: border-box;">
+        <div style="max-width: 1200px; margin: 0 auto;">
+            <h1 style="font-size: 4rem; font-weight: 800; margin-bottom: 0; margin-top: 0; color: #ffffff;">Our
+                Portfolio</h1>
+            <p style="color: #ffffff; max-width: 600px; margin: 1rem auto 0; font-size: 1.1rem;">Explore our latest
+                digital marketing and web design success stories.</p>
+        </div>
+    </section>
+
+    <!-- Portfolio Content -->
+    <section style="padding: 6rem 5%; background-color: #f9f9f9; box-sizing: border-box;">
+        <div style="max-width: 1200px; margin: 0 auto;">
+            <div style="text-align: center; margin-bottom: 4rem;">
+                <span
+                    style="color: #E72D21; font-weight: 600; text-transform: uppercase; letter-spacing: 2px; display: block; margin-bottom: 10px;">Our
+                    Work</span>
+                <h2 style="font-size: 2.5rem; font-weight: 800; line-height: 1.2; margin: 0;">Featured Projects</h2>
+            </div>
+
+            <div class="portfolio-grid" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem;">
+                <!-- Item 1 -->
+                <div class="portfolio-card"
+                    style="background: #ffffff; border-radius: 15px; overflow: hidden; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05); border: 1px solid #eaeaea; transition: 0.3s ease;">
+                    <img src="./Nextpng.png" alt="SEO Campaign" style="width: 100%; height: 250px; object-fit: cover;">
+                    <div style="padding: 2rem;">
+                        <span
+                            style="color: #E72D21; font-size: 0.9rem; font-weight: 600; text-transform: uppercase;">SEO
+                            Optimization</span>
+                        <h3 style="font-weight: 800; font-size: 1.5rem; margin: 0.5rem 0 1rem;">Nexttra</h3>
+                        <p style="color: #666666; margin: 0;">Increased organic traffic by 150% in 6 months using
+                            targeted keyword strategies and technical SEO.</p>
+                    </div>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="portfolio-card"
+                    style="background: #ffffff; border-radius: 15px; overflow: hidden; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05); border: 1px solid #eaeaea; transition: 0.3s ease;">
+                    <img src="./Grill.png" alt="Web Development" style="width: 100%; height: 250px; object-fit: cover;">
+                    <div style="padding: 2rem;">
+                        <span
+                            style="color: #E72D21; font-size: 0.9rem; font-weight: 600; text-transform: uppercase;">Web
+                            Development</span>
+                        <h3 style="font-weight: 800; font-size: 1.5rem; margin: 0.5rem 0 1rem;">Grill & Crave</h3>
+                        <p style="color: #666666; margin: 0;">Designed and developed a lightning-fast custom headless
+                            Shopify store with an award-winning UI.</p>
+                    </div>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="portfolio-card"
+                    style="background: #ffffff; border-radius: 15px; overflow: hidden; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05); border: 1px solid #eaeaea; transition: 0.3s ease;">
+                    <img src="./Dent.png" alt="Social Media" style="width: 100%; height: 250px; object-fit: cover;">
+                    <div style="padding: 2rem;">
+                        <span
+                            style="color: #E72D21; font-size: 0.9rem; font-weight: 600; text-transform: uppercase;">Social
+                            Media</span>
+                        <h3 style="font-weight: 800; font-size: 1.5rem; margin: 0.5rem 0 1rem;">Xpress Dent</h3>
+                        <p style="color: #666666; margin: 0;">Grew Instagram following from 10k to 100k through viral
+                            content creation and influencer partnerships.</p>
+                    </div>
+                </div>
+
+                <!-- Item 4 -->
+                <div class="portfolio-card"
+                    style="background: #ffffff; border-radius: 15px; overflow: hidden; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05); border: 1px solid #eaeaea; transition: 0.3s ease;">
+                    <img src="./Oli.png" alt="Content Marketing" style="width: 100%; height: 250px; object-fit: cover;">
+                    <div style="padding: 2rem;">
+                        <span
+                            style="color: #E72D21; font-size: 0.9rem; font-weight: 600; text-transform: uppercase;">Content
+                            Marketing</span>
+                        <h3 style="font-weight: 800; font-size: 1.5rem; margin: 0.5rem 0 1rem;">Oliyae</h3>
+                        <p style="color: #666666; margin: 0;">Created a comprehensive blog strategy that now drives 50%
+                            of all their inbound qualified leads.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer style="background-color: #121212; color: #ffffff; padding: 4rem 5% 2rem; box-sizing: border-box;">
+        <div
+            style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 3rem; max-width: 1200px; margin: 0 auto 3rem;">
+            <div>
+                <a href="index.html"
+                    style="font-size: 1.8rem; font-weight: 800; color: #ffffff; display: inline-flex; align-items: center; gap: 10px; margin-bottom: 1rem; text-decoration: none;">
+                    <img src="./TapusWhite.png" alt="Tapus Logo" style="width: 160px; object-fit: contain;">
+                </a>
+                <p style="color: #aaa; margin-bottom: 1rem;">We are a full-service digital marketing agency dedicated to
+                    growing your business online through creative design and data-driven strategies.</p>
+                <div style="display: flex; gap: 1rem; margin-top: 1rem;">
+                    <a href="#"
+                        style="display: flex; align-items: center; justify-content: center; width: 40px; height: 40px; background-color: rgba(255, 255, 255, 0.1); border-radius: 50%; color: #ffffff; text-decoration: none;"><i
+                            class="fa-brands fa-twitter"></i></a>
+                    <a href="#"
+                        style="display: flex; align-items: center; justify-content: center; width: 40px; height: 40px; background-color: rgba(255, 255, 255, 0.1); border-radius: 50%; color: #ffffff; text-decoration: none;"><i
+                            class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"
+                        style="display: flex; align-items: center; justify-content: center; width: 40px; height: 40px; background-color: rgba(255, 255, 255, 0.1); border-radius: 50%; color: #ffffff; text-decoration: none;"><i
+                            class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+            <div>
+                <h3 style="color: #ffffff; font-size: 1.5rem; margin-bottom: 1.5rem; margin-top: 0;">Quick Links</h3>
+                <div style="display: flex; flex-direction: column; gap: 1rem;">
+                    <a href="index.html" style="color: #aaa; text-decoration: none;">Home</a>
+                    <a href="about.html" style="color: #aaa; text-decoration: none;">About Us</a>
+                    <a href="portfolio.html" style="color: #aaa; text-decoration: none;">Portfolio</a>
+                    <a href="contact.html" style="color: #aaa; text-decoration: none;">Contact Us</a>
+                </div>
+            </div>
+            <div>
+                <h3 style="color: #ffffff; font-size: 1.5rem; margin-bottom: 1.5rem; margin-top: 0;">Services</h3>
+                <div style="display: flex; flex-direction: column; gap: 1rem;">
+                    <a href="#" style="color: #aaa; text-decoration: none;">SEO Optimization</a>
+                    <a href="#" style="color: #aaa; text-decoration: none;">Web Development</a>
+                    <a href="#" style="color: #aaa; text-decoration: none;">Social Media Marketing</a>
+                </div>
+            </div>
+            <div>
+                <h3 style="color: #ffffff; font-size: 1.5rem; margin-bottom: 1.5rem; margin-top: 0;">Contact Info</h3>
+                <p style="color: #aaa; margin-bottom: 0.5rem;"><i class="fa-solid fa-location-dot"
+                        style="color: #E72D21; margin-right: 10px;"></i> 123 Creative St, Tech City</p>
+                <p style="color: #aaa; margin-bottom: 0.5rem;"><i class="fa-solid fa-envelope"
+                        style="color: #E72D21; margin-right: 10px;"></i> hello@agency.com</p>
+                <p style="color: #aaa; margin-bottom: 0.5rem;"><i class="fa-solid fa-phone"
+                        style="color: #E72D21; margin-right: 10px;"></i> +1 (555) 123-4567</p>
+            </div>
+        </div>
+        <div
+            style="text-align: center; padding-top: 2rem; border-top: 1px solid rgba(255, 255, 255, 0.1); color: #aaa;">
+            <p style="margin: 0;">&copy; 2026 Creative Agency. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
