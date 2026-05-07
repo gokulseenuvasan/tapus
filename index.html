@@ -7,20 +7,22 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 <body style="margin: 0; padding: 0; box-sizing: border-box; font-family: 'DM Sans', sans-serif; background-color: #fdfdfd; color: #1a1a1a; background-image: radial-gradient(#e0e0e0 2px, transparent 2px); background-size: 24px 24px;">
 
     <!-- Header -->
     <header style="display: flex; justify-content: space-between; align-items: center; padding: 20px 5%; background-color: transparent; box-sizing: border-box;">
-        <a href="#" style="font-size: 24px; font-weight: 800; color: #000; text-decoration: none;">Agency.</a>
+        <a href="index.html" style="font-size: 24px; font-weight: 800; color: #000; text-decoration: none;">Agency.</a>
         <nav style="display: flex; gap: 30px;">
-            <a href="#" style="text-decoration: none; color: #1a1a1a; font-weight: 500; font-size: 16px;">Home</a>
+            <a href="index.html" style="text-decoration: none; color: #1a1a1a; font-weight: 500; font-size: 16px;">Home</a>
             <a href="#" style="text-decoration: none; color: #1a1a1a; font-weight: 500; font-size: 16px;">Services</a>
             <a href="#" style="text-decoration: none; color: #1a1a1a; font-weight: 500; font-size: 16px;">About Us</a>
             <a href="#" style="text-decoration: none; color: #1a1a1a; font-weight: 500; font-size: 16px;">Portfolio</a>
             <a href="#" style="text-decoration: none; color: #1a1a1a; font-weight: 500; font-size: 16px;">Blog</a>
+            <a href="contact.html" style="text-decoration: none; color: #1a1a1a; font-weight: 500; font-size: 16px;">Contact</a>
         </nav>
-        <a href="#" style="padding: 12px 24px; background-color: #1a1a1a; color: #fff; text-decoration: none; border-radius: 6px; font-weight: 600;">Get in Touch</a>
+        <a href="contact.html" style="padding: 12px 24px; background-color: #1a1a1a; color: #fff; text-decoration: none; border-radius: 6px; font-weight: 600;">Get in Touch</a>
     </header>
 
     <!-- Hero Section 1 -->
@@ -475,20 +477,340 @@
         </div>
     </section>
 
-    <!-- Default Footer -->
-    <footer style="background-color: #1a1a1a; color: #fff; padding: 60px 5%; text-align: center; margin-top: 100px; box-sizing: border-box; font-family: 'DM Sans', sans-serif;">
-        <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px; padding-bottom: 40px; border-bottom: 1px solid rgba(255,255,255,0.1); margin-bottom: 40px;">
-            <a href="#" style="font-size: 24px; font-weight: 800; color: #fff; text-decoration: none;">Agency.</a>
-            <div style="display: flex; gap: 30px;">
-                <a href="#" style="color: #ccc; text-decoration: none; font-size: 14px;">Privacy Policy</a>
-                <a href="#" style="color: #ccc; text-decoration: none; font-size: 14px;">Terms of Service</a>
-                <a href="#" style="color: #ccc; text-decoration: none; font-size: 14px;">Cookie Policy</a>
+    <!-- Section 8: Testimonials/Reviews -->
+    <section style="background-color: #fdfdfd; padding: 100px 5%; font-family: 'DM Sans', sans-serif; box-sizing: border-box;">
+        <div style="text-align: center; margin-bottom: 60px;">
+            <div style="display: inline-block; background-color: #ffd600; color: #000; font-size: 12px; font-weight: 700; padding: 6px 16px; border-radius: 20px; text-transform: uppercase; margin-bottom: 24px;">Testimonials</div>
+            <h2 style="font-size: 42px; line-height: 1.2; font-weight: 800; margin: 0 auto; max-width: 800px; letter-spacing: -1px; color: #1a1a1a;">What Our Clients Say About Us</h2>
+        </div>
+
+        <div class="swiper reviewSwiper" style="padding-bottom: 50px; --swiper-pagination-color: #ffd600; --swiper-pagination-bullet-inactive-color: #ccc; --swiper-pagination-bullet-inactive-opacity: 0.5;">
+            <div class="swiper-wrapper">
+                <!-- Review 1 -->
+                <div class="swiper-slide" style="height: auto;">
+                    <div style="background-color: #fff; border: 1px solid #eaeaea; border-radius: 16px; padding: 40px; box-shadow: 0 10px 30px rgba(0,0,0,0.03); height: 100%; box-sizing: border-box; display: flex; flex-direction: column;">
+                        <!-- Stars -->
+                        <div style="display: flex; gap: 4px; margin-bottom: 24px; color: #ffd600; font-size: 20px;">
+                            ★ ★ ★ ★ ★
+                        </div>
+                        <!-- Comment -->
+                        <p style="font-size: 18px; line-height: 1.6; color: #4a4a4a; margin: 0 0 30px 0; font-style: italic; flex-grow: 1;">"The team delivered exceptional results that completely transformed our online presence. Their strategic approach and attention to detail are unmatched. Highly recommended for any business looking to scale."</p>
+                        <!-- User Info -->
+                        <div style="display: flex; align-items: center; gap: 16px;">
+                            <img src="https://i.pravatar.cc/150?img=68" alt="Client" style="width: 60px; height: 60px; border-radius: 50%; object-fit: cover;">
+                            <div>
+                                <h4 style="margin: 0 0 4px 0; font-size: 18px; font-weight: 700; color: #1a1a1a;">Sarah Johnson</h4>
+                                <span style="font-size: 14px; color: #888;">Marketing Director, TechNova</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 2 -->
+                <div class="swiper-slide" style="height: auto;">
+                    <div style="background-color: #fff; border: 1px solid #eaeaea; border-radius: 16px; padding: 40px; box-shadow: 0 10px 30px rgba(0,0,0,0.03); height: 100%; box-sizing: border-box; display: flex; flex-direction: column;">
+                        <!-- Stars -->
+                        <div style="display: flex; gap: 4px; margin-bottom: 24px; color: #ffd600; font-size: 20px;">
+                            ★ ★ ★ ★ ★
+                        </div>
+                        <!-- Comment -->
+                        <p style="font-size: 18px; line-height: 1.6; color: #4a4a4a; margin: 0 0 30px 0; font-style: italic; flex-grow: 1;">"Working with this agency was a game-changer. They didn't just build a website; they built a growth engine for our company. The ROI we've seen in just three months is incredible."</p>
+                        <!-- User Info -->
+                        <div style="display: flex; align-items: center; gap: 16px;">
+                            <img src="https://i.pravatar.cc/150?img=11" alt="Client" style="width: 60px; height: 60px; border-radius: 50%; object-fit: cover;">
+                            <div>
+                                <h4 style="margin: 0 0 4px 0; font-size: 18px; font-weight: 700; color: #1a1a1a;">Michael Chen</h4>
+                                <span style="font-size: 14px; color: #888;">CEO, Innovate Solutions</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 3 -->
+                <div class="swiper-slide" style="height: auto;">
+                    <div style="background-color: #fff; border: 1px solid #eaeaea; border-radius: 16px; padding: 40px; box-shadow: 0 10px 30px rgba(0,0,0,0.03); height: 100%; box-sizing: border-box; display: flex; flex-direction: column;">
+                        <!-- Stars -->
+                        <div style="display: flex; gap: 4px; margin-bottom: 24px; color: #ffd600; font-size: 20px;">
+                            ★ ★ ★ ★ ★
+                        </div>
+                        <!-- Comment -->
+                        <p style="font-size: 18px; line-height: 1.6; color: #4a4a4a; margin: 0 0 30px 0; font-style: italic; flex-grow: 1;">"From brand identity to SEO, they handled everything flawlessly. It's rare to find an agency that genuinely cares about your success as much as you do. They are truly partners."</p>
+                        <!-- User Info -->
+                        <div style="display: flex; align-items: center; gap: 16px;">
+                            <img src="https://i.pravatar.cc/150?img=47" alt="Client" style="width: 60px; height: 60px; border-radius: 50%; object-fit: cover;">
+                            <div>
+                                <h4 style="margin: 0 0 4px 0; font-size: 18px; font-weight: 700; color: #1a1a1a;">Emma Thompson</h4>
+                                <span style="font-size: 14px; color: #888;">Founder, EcoStyle</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 4 -->
+                <div class="swiper-slide" style="height: auto;">
+                    <div style="background-color: #fff; border: 1px solid #eaeaea; border-radius: 16px; padding: 40px; box-shadow: 0 10px 30px rgba(0,0,0,0.03); height: 100%; box-sizing: border-box; display: flex; flex-direction: column;">
+                        <!-- Stars -->
+                        <div style="display: flex; gap: 4px; margin-bottom: 24px; color: #ffd600; font-size: 20px;">
+                            ★ ★ ★ ★ ★
+                        </div>
+                        <!-- Comment -->
+                        <p style="font-size: 18px; line-height: 1.6; color: #4a4a4a; margin: 0 0 30px 0; font-style: italic; flex-grow: 1;">"Professional, responsive, and innovative. The digital strategy they developed helped us penetrate new markets and significantly increase our market share."</p>
+                        <!-- User Info -->
+                        <div style="display: flex; align-items: center; gap: 16px;">
+                            <img src="https://i.pravatar.cc/150?img=33" alt="Client" style="width: 60px; height: 60px; border-radius: 50%; object-fit: cover;">
+                            <div>
+                                <h4 style="margin: 0 0 4px 0; font-size: 18px; font-weight: 700; color: #1a1a1a;">David Wilson</h4>
+                                <span style="font-size: 14px; color: #888;">VP of Sales, GlobalCorp</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var swiper = new Swiper(".reviewSwiper", {
+                slidesPerView: 1,
+                spaceBetween: 30,
+                loop: true,
+                autoplay: {
+                    delay: 3500,
+                    disableOnInteraction: false,
+                },
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                breakpoints: {
+                    768: {
+                        slidesPerView: 2,
+                    },
+                    1024: {
+                        slidesPerView: 3,
+                    },
+                },
+            });
+        });
+    </script>
+
+    <!-- Section 9: Video CTA & Consultation -->
+    <section style="position: relative; padding: 120px 5%; text-align: center; font-family: 'DM Sans', sans-serif; box-sizing: border-box; background-image: url('https://newkit.creativemox.com/kavira/wp-content/uploads/sites/10/2025/11/img_7.jpg'); background-size: cover; background-position: center; background-attachment: fixed;">
+        <!-- Overlay -->
+        <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-color: rgba(0, 0, 0, 0.6); z-index: 1;"></div>
+        
+        <div style="position: relative; z-index: 2; display: flex; flex-direction: column; align-items: center;">
+            <!-- Play Button -->
+            <a href="#" style="display: flex; justify-content: center; align-items: center; width: 100px; height: 100px; background-color: #fff; border-radius: 50%; text-decoration: none; margin-bottom: 30px; box-shadow: 0 0 0 15px rgba(255, 255, 255, 0.3), 0 0 0 30px rgba(255, 255, 255, 0.1); transition: all 0.3s ease;">
+                <svg width="30" height="30" viewBox="0 0 24 24" fill="#ffd600" style="margin-left: 6px;">
+                    <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                </svg>
+            </a>
+            
+            <!-- Heading -->
+            <h2 style="color: #fff; font-size: 56px; font-weight: 800; line-height: 1.1; margin: 0 0 20px 0; max-width: 800px; letter-spacing: -1px;">Request Your Free<br>Marketing Consultation</h2>
+            
+            <!-- Subheading -->
+            <p style="color: #fff; font-size: 18px; margin: 0 0 40px 0; opacity: 0.9; max-width: 600px; line-height: 1.6;">Gain clear insights and recommendations crafted specifically for your business.</p>
+            
+            <!-- Button -->
+            <a href="#" style="display: inline-flex; align-items: center; gap: 10px; padding: 16px 32px; background-color: #ffd600; color: #000; text-decoration: none; border-radius: 6px; font-weight: 700; font-size: 16px;">
+                Request Consultation
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                </svg>
+            </a>
+        </div>
+    </section>
+
+    <!-- Section 10: Client Logos Strip -->
+    <section style="background-color: #fff; padding: 40px 5%; box-sizing: border-box;">
+        <div style="display: flex; justify-content: space-around; align-items: center; flex-wrap: wrap; gap: 30px; max-width: 1200px; margin: 0 auto;">
+            <img src="https://newkit.creativemox.com/kavira/wp-content/uploads/sites/10/2025/11/logo_kavira.png" alt="Client Logo" style="height: 35px; opacity: 0.6; filter: grayscale(100%); cursor: pointer;">
+            <img src="https://newkit.creativemox.com/kavira/wp-content/uploads/sites/10/2025/11/logo_kavira.png" alt="Client Logo" style="height: 35px; opacity: 0.6; filter: grayscale(100%); cursor: pointer;">
+            <img src="https://newkit.creativemox.com/kavira/wp-content/uploads/sites/10/2025/11/logo_kavira.png" alt="Client Logo" style="height: 35px; opacity: 0.6; filter: grayscale(100%); cursor: pointer;">
+            <img src="https://newkit.creativemox.com/kavira/wp-content/uploads/sites/10/2025/11/logo_kavira.png" alt="Client Logo" style="height: 35px; opacity: 0.6; filter: grayscale(100%); cursor: pointer;">
+            <img src="https://newkit.creativemox.com/kavira/wp-content/uploads/sites/10/2025/11/logo_kavira.png" alt="Client Logo" style="height: 35px; opacity: 0.6; filter: grayscale(100%); cursor: pointer;">
+        </div>
+    </section>
+
+    <!-- Section 11: Support Team -->
+    <section style="position: relative; padding: 100px 5%; text-align: center; font-family: 'DM Sans', sans-serif; background-color: #fff; box-sizing: border-box; overflow: hidden;">
+        <!-- Background World Map -->
+        <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-image: url('./world.png'); background-size: contain; background-position: center; background-repeat: no-repeat; opacity: 0.05; z-index: 1;"></div>
+        
+        <div style="position: relative; z-index: 2; max-width: 1200px; margin: 0 auto;">
+            <!-- Tag -->
+            <div style="display: inline-block; background-color: #ffd600; color: #000; font-size: 11px; font-weight: 700; padding: 6px 16px; border-radius: 20px; text-transform: uppercase; margin-bottom: 24px;">Need More Help?</div>
+            
+            <!-- Heading -->
+            <h2 style="font-size: 42px; line-height: 1.2; font-weight: 800; margin: 0 auto 60px; max-width: 700px; letter-spacing: -1px; color: #1a1a1a;">Discover Extra Help From Our Expert Support Team</h2>
+            
+            <!-- Cards Grid -->
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
+                <!-- Card 1 -->
+                <div style="background-color: #f6f6f6; border-radius: 12px; padding: 50px 30px; text-align: center; box-sizing: border-box; display: flex; flex-direction: column; align-items: center;">
+                    <!-- Icon Box -->
+                    <div style="background-color: #3ba134; width: 64px; height: 64px; border-radius: 12px; display: flex; justify-content: center; align-items: center; margin-bottom: 24px;">
+                        <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                        </svg>
+                    </div>
+                    <h3 style="font-size: 24px; font-weight: 700; color: #1a1a1a; margin: 0 0 16px 0;">Customer Support</h3>
+                    <p style="font-size: 15px; color: #666; line-height: 1.6; margin: 0 0 32px 0;">Lorem ipsum dolor sit amet odio gravida lobortis montes nostra amet duis</p>
+                    <a href="#" style="display: inline-flex; align-items: center; gap: 8px; padding: 12px 24px; background-color: #ffd600; color: #000; text-decoration: none; border-radius: 6px; font-weight: 700; font-size: 14px;">
+                        Chat now
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                        </svg>
+                    </a>
+                </div>
+
+                <!-- Card 2 -->
+                <div style="background: linear-gradient(135deg, #d4db00 0%, #30b135 100%); border-radius: 12px; padding: 50px 30px; text-align: center; box-sizing: border-box; display: flex; flex-direction: column; align-items: center; position: relative; overflow: hidden; box-shadow: 0 20px 40px rgba(48, 177, 53, 0.2);">
+                    <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-image: radial-gradient(rgba(255,255,255,0.15) 1px, transparent 1px); background-size: 12px 12px; z-index: 0; opacity: 0.5;"></div>
+                    <!-- Icon Box -->
+                    <div style="background-color: #fff; width: 64px; height: 64px; border-radius: 12px; display: flex; justify-content: center; align-items: center; margin-bottom: 24px; position: relative; z-index: 1;">
+                        <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#3ba134" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                    </div>
+                    <h3 style="font-size: 24px; font-weight: 700; color: #fff; margin: 0 0 16px 0; position: relative; z-index: 1;">Ticket Support</h3>
+                    <p style="font-size: 15px; color: #fff; line-height: 1.6; margin: 0 0 32px 0; opacity: 0.9; position: relative; z-index: 1;">Lorem ipsum dolor sit amet odio gravida lobortis montes nostra amet duis</p>
+                    <a href="#" style="display: inline-flex; align-items: center; gap: 8px; padding: 12px 24px; background-color: #1a1a1a; color: #fff; text-decoration: none; border-radius: 6px; font-weight: 700; font-size: 14px; position: relative; z-index: 1;">
+                        Send Ticket
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="22" y1="2" x2="11" y2="13"></line>
+                            <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                        </svg>
+                    </a>
+                </div>
+
+                <!-- Card 3 -->
+                <div style="background-color: #f6f6f6; border-radius: 12px; padding: 50px 30px; text-align: center; box-sizing: border-box; display: flex; flex-direction: column; align-items: center;">
+                    <!-- Icon Box -->
+                    <div style="background-color: #3ba134; width: 64px; height: 64px; border-radius: 12px; display: flex; justify-content: center; align-items: center; margin-bottom: 24px;">
+                        <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                            <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+                        </svg>
+                    </div>
+                    <h3 style="font-size: 24px; font-weight: 700; color: #1a1a1a; margin: 0 0 16px 0;">Free Insight</h3>
+                    <p style="font-size: 15px; color: #666; line-height: 1.6; margin: 0 0 32px 0;">Lorem ipsum dolor sit amet odio gravida lobortis montes nostra amet duis</p>
+                    <a href="#" style="display: inline-flex; align-items: center; gap: 8px; padding: 12px 24px; background-color: #ffd600; color: #000; text-decoration: none; border-radius: 6px; font-weight: 700; font-size: 14px;">
+                        Read Article
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                            <polyline points="14 2 14 8 20 8"></polyline>
+                            <line x1="16" y1="13" x2="8" y2="13"></line>
+                            <line x1="16" y1="17" x2="8" y2="17"></line>
+                            <polyline points="10 9 9 9 8 9"></polyline>
+                        </svg>
+                    </a>
+                </div>
             </div>
         </div>
-        <div style="font-size: 14px; color: #888;">
-            &copy; 2026 Agency. All rights reserved.
-        </div>
-    </footer>
+    </section>
+
+    <!-- Footer Section -->
+    <div style="position: relative; margin-top: 100px;">
+        <!-- Yellow corner blob -->
+        <div style="position: absolute; top: 0; left: 0; width: 100px; height: 100px; background-color: #ffd600; border-top-left-radius: 40px; z-index: 1;"></div>
+        <!-- Green corner blob -->
+        <div style="position: absolute; top: 0; right: 0; width: 100px; height: 100px; background-color: #3ba134; border-top-right-radius: 40px; z-index: 1;"></div>
+
+        <!-- Main Footer Container -->
+        <footer style="position: relative; z-index: 2; background-color: #1a1a1a; padding: 80px 5% 40px; border-top-left-radius: 40px; border-top-right-radius: 40px; box-sizing: border-box; font-family: 'DM Sans', sans-serif;">
+            
+            <!-- Top Footer Links -->
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 40px; margin-bottom: 60px;">
+                
+                <!-- Col 1: Logo & Socials -->
+                <div style="grid-column: span 2; min-width: 250px;">
+                    <img src="https://newkit.creativemox.com/kavira/wp-content/uploads/sites/10/2025/11/logo_kavira.png" alt="Kavira Logo" style="height: 40px; margin-bottom: 30px;">
+                    
+                    <div style="display: flex; gap: 12px;">
+                        <!-- Facebook -->
+                        <a href="#" style="display: flex; justify-content: center; align-items: center; width: 40px; height: 40px; background-color: rgba(255, 255, 255, 0.1); border-radius: 50%; color: #fff; text-decoration: none; transition: background-color 0.3s;">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+                        </a>
+                        <!-- Instagram -->
+                        <a href="#" style="display: flex; justify-content: center; align-items: center; width: 40px; height: 40px; background-color: rgba(255, 255, 255, 0.1); border-radius: 50%; color: #fff; text-decoration: none; transition: background-color 0.3s;">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                        </a>
+                        <!-- Twitter/X -->
+                        <a href="#" style="display: flex; justify-content: center; align-items: center; width: 40px; height: 40px; background-color: rgba(255, 255, 255, 0.1); border-radius: 50%; color: #fff; text-decoration: none; transition: background-color 0.3s;">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path></svg>
+                        </a>
+                        <!-- YouTube -->
+                        <a href="#" style="display: flex; justify-content: center; align-items: center; width: 40px; height: 40px; background-color: rgba(255, 255, 255, 0.1); border-radius: 50%; color: #fff; text-decoration: none; transition: background-color 0.3s;">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33 2.78 2.78 0 0 0 1.94 2c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.33 29 29 0 0 0-.46-5.33z"></path><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" fill="#111"></polygon></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Col 2: Services -->
+                <div>
+                    <h4 style="font-size: 18px; font-weight: 600; margin: 0 0 24px 0; color: #fff;">Services</h4>
+                    <ul style="list-style: none; padding: 0; margin: 0;">
+                        <li style="margin-bottom: 16px;"><a href="#" style="color: #aaa; text-decoration: none; font-size: 15px; transition: color 0.3s;">Performance Marketing</a></li>
+                        <li style="margin-bottom: 16px;"><a href="#" style="color: #aaa; text-decoration: none; font-size: 15px; transition: color 0.3s;">Brand Strategy</a></li>
+                        <li style="margin-bottom: 16px;"><a href="#" style="color: #aaa; text-decoration: none; font-size: 15px; transition: color 0.3s;">Content Production</a></li>
+                        <li style="margin-bottom: 16px;"><a href="#" style="color: #aaa; text-decoration: none; font-size: 15px; transition: color 0.3s;">Social Management</a></li>
+                        <li style="margin-bottom: 16px;"><a href="#" style="color: #aaa; text-decoration: none; font-size: 15px; transition: color 0.3s;">Web Development</a></li>
+                        <li><a href="#" style="color: #aaa; text-decoration: none; font-size: 15px; transition: color 0.3s;">SEO Optimization</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3: Support -->
+                <div>
+                    <h4 style="font-size: 18px; font-weight: 600; margin: 0 0 24px 0; color: #fff;">Support</h4>
+                    <ul style="list-style: none; padding: 0; margin: 0;">
+                        <li style="margin-bottom: 16px;"><a href="#" style="color: #aaa; text-decoration: none; font-size: 15px; transition: color 0.3s;">Help Center</a></li>
+                        <li style="margin-bottom: 16px;"><a href="#" style="color: #aaa; text-decoration: none; font-size: 15px; transition: color 0.3s;">Contact Support</a></li>
+                        <li style="margin-bottom: 16px;"><a href="#" style="color: #aaa; text-decoration: none; font-size: 15px; transition: color 0.3s;">Live Chat</a></li>
+                        <li style="margin-bottom: 16px;"><a href="#" style="color: #aaa; text-decoration: none; font-size: 15px; transition: color 0.3s;">Ticket Request</a></li>
+                        <li><a href="#" style="color: #aaa; text-decoration: none; font-size: 15px; transition: color 0.3s;">Service Guide</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 4: Company -->
+                <div>
+                    <h4 style="font-size: 18px; font-weight: 600; margin: 0 0 24px 0; color: #fff;">Company</h4>
+                    <ul style="list-style: none; padding: 0; margin: 0;">
+                        <li style="margin-bottom: 16px;"><a href="#" style="color: #aaa; text-decoration: none; font-size: 15px; transition: color 0.3s;">About Kavira</a></li>
+                        <li style="margin-bottom: 16px;"><a href="#" style="color: #aaa; text-decoration: none; font-size: 15px; transition: color 0.3s;">Our Mission</a></li>
+                        <li style="margin-bottom: 16px;"><a href="#" style="color: #aaa; text-decoration: none; font-size: 15px; transition: color 0.3s;">Careers Page</a></li>
+                        <li style="margin-bottom: 16px;"><a href="#" style="color: #aaa; text-decoration: none; font-size: 15px; transition: color 0.3s;">Team Members</a></li>
+                        <li style="margin-bottom: 16px;"><a href="#" style="color: #aaa; text-decoration: none; font-size: 15px; transition: color 0.3s;">Press Release</a></li>
+                        <li><a href="#" style="color: #aaa; text-decoration: none; font-size: 15px; transition: color 0.3s;">Marketing Insights</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- Bottom Strip -->
+            <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px; padding-top: 30px; border-top: 1px solid rgba(255,255,255,0.1);">
+                <div style="font-size: 14px; color: #888;">
+                    Copyright &copy; 2026 Kavira, All rights reserved. Powered by MoxCreative.
+                </div>
+                <div style="display: flex; gap: 20px; font-size: 14px; color: #888;">
+                    <a href="#" style="color: #aaa; text-decoration: none; transition: color 0.3s;">Privacy Policy</a>
+                    <span style="color: #555;">|</span>
+                    <a href="#" style="color: #aaa; text-decoration: none; transition: color 0.3s;">Terms Service</a>
+                    <span style="color: #555;">|</span>
+                    <a href="#" style="color: #aaa; text-decoration: none; transition: color 0.3s;">Data Protection</a>
+                </div>
+            </div>
+
+        </footer>
+    </div>
 
 </body>
 </html>
